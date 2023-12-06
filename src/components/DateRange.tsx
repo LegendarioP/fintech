@@ -5,7 +5,7 @@ const DateRange = () => {
   const [inicio, setInicio] = React.useState('')
   const [final, setFinal] = React.useState('')
   return (
-    <div>
+    <form className='box'>
         <DateInput 
           label="Inicio" 
           value={inicio}
@@ -18,7 +18,7 @@ const DateRange = () => {
           onChange={({target}) => setFinal(target.value)}
         />
         {final}
-    </div>
+    </form>
   )
 }
 

@@ -7,11 +7,13 @@ import { DataContextProvider } from "./Context/DataContext";
 function App() {
   return (
     <DataContextProvider>
-      <Header />
-      <main>
-        <Slidenav />
-        <Resumo />
-      </main>
+      <div className="container">
+        <Header />
+        <main>
+          <Slidenav />
+          <Resumo />
+        </main>
+      </div>
     </DataContextProvider>
   );
 }
